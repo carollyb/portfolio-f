@@ -29,6 +29,7 @@ export const theme = createTheme({
       fontSize: '130px',
       fontWeight: 500,
       lineHeight: '130px',
+      letterSpacing: '-0.09em',
     },
     h2: {
       // desktop - ano dos projetos
@@ -59,6 +60,13 @@ export const theme = createTheme({
       fontSize: '14px',
       fontWeight: 400,
       lineHeight: '20px',
+    },
+    caption: {
+      //social media buttons
+      fontSize: '16px',
+      fontWeight: 400,
+      lineHeight: '20px',
+      color: '#707070',
     },
   },
 });
