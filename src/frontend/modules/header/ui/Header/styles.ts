@@ -17,6 +17,13 @@ export const HeaderSx: SxProps = {
 
 export const TextSx: SxProps = { color: 'primary.main' };
 
+export const DotSx: SxProps = {
+  width: '15px',
+  height: '15px',
+  backgroundColor: 'background.default',
+  borderRadius: '7.5px',
+};
+
 export const DrawerSx: SxProps = {
   '& .MuiPaper-root': {
     marginTop: '80px',

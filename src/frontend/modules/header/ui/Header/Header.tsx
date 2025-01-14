@@ -1,7 +1,7 @@
 import { Box, Button, Drawer, Typography } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 import useDropdown from '@/frontend/modules/dropdown/hooks/useDropdown';
-import { DrawerSx, HeaderSx, TextSx } from './styles';
+import { DotSx, DrawerSx, HeaderSx, TextSx } from './styles';
 import { Dropdown } from '@/frontend/modules/dropdown/ui/Dropdown';
 
 export const Header = () => {
@@ -19,6 +19,7 @@ export const Header = () => {
         FERNANDA FERREIRA EZIQUIEL
       </Typography>
       <Button onClick={toggleDrawer(!open)}>MENU</Button>
+      <Box sx={DotSx} />
       <Drawer
         sx={DrawerSx}
         anchor='top'
