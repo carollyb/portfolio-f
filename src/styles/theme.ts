@@ -1,4 +1,7 @@
-import { karantina } from '@/frontend/layouts/DefaultLayout/DefaultLayout';
+import {
+  karantina,
+  inter,
+} from '@/frontend/layouts/DefaultLayout/DefaultLayout';
 import { createTheme } from '@mui/material';
 
 export const theme = createTheme({
@@ -26,25 +29,29 @@ export const theme = createTheme({
   typography: {
     h1: {
       // desktop - títulos dos projetos
+      fontFamily: `${inter.style.fontFamily}`,
       fontSize: '130px',
       fontWeight: 500,
       lineHeight: '130px',
-      letterSpacing: '-0.09em',
+      letterSpacing: '-0.1em',
     },
     h2: {
       // desktop - ano dos projetos
+      fontFamily: `${inter.style.fontFamily}`,
       fontSize: '48px',
       fontWeight: 500,
       lineHeight: '62px',
     },
     body1: {
       //desktop descrições dos projetos
+      fontFamily: `${inter.style.fontFamily}`,
       fontSize: '40px',
       fontWeight: 500,
       lineHeight: '45px',
     },
     body2: {
       //desktop about - bio
+      fontFamily: `${inter.style.fontFamily}`,
       fontSize: '25px',
       fontWeight: 500,
       lineHeight: '40px',
@@ -57,12 +64,14 @@ export const theme = createTheme({
     },
     subtitle2: {
       //desktop return to projects
+      fontFamily: `${inter.style.fontFamily}`,
       fontSize: '14px',
       fontWeight: 400,
       lineHeight: '20px',
     },
     caption: {
       //social media buttons
+      fontFamily: `${inter.style.fontFamily}`,
       fontSize: '16px',
       fontWeight: 400,
       lineHeight: '20px',

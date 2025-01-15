@@ -13,6 +13,7 @@ export const DropdownSx: SxProps = {
 export const BoxSx: SxProps = {
   display: 'flex',
   flexDirection: 'row',
+  justifyContent: 'space-between',
 };
 
 export const PageLinksSx: SxProps = {
@@ -26,6 +27,7 @@ export const LinksSx: SxProps = {
 export const TextLinksSx: SxProps = {
   color: 'text.primary',
   lineHeight: '160px',
+  fontWeight: 400,
 };
 
 export const SocialLinksSx: SxProps = {
@@ -33,4 +35,70 @@ export const SocialLinksSx: SxProps = {
   flexDirection: 'row',
   marginTop: '45px',
   gap: '24px',
+};
+
+export const FeaturedProjectBoxSx: SxProps = {
+  display: 'flex',
+  flexDirection: 'row',
+};
+
+export const FeaturedProjectSectionSx: SxProps = {
+  width: '192px',
+  height: '291px',
+  display: 'flex',
+  flexDirection: 'column',
+  justifyContent: 'space-around',
+};
+
+export const FeaturedProjectTextSx: SxProps = {
+  fontSize: '36px',
+  lineHeight: '40px',
+  color: '#1300A2',
+  textDecoration: 'underline',
+  letterSpacing: '0.06em',
+  fontWeight: 400,
+};
+
+export const ViewProjectsBoxSx: SxProps = {
+  width: '42px',
+};
+
+export const ViewProjectsTextSx: SxProps = {
+  textDecoration: 'underline',
+};
+
+export const ProjectImageAndLinksBoxSx: SxProps = {
+  position: 'relative',
+  display: 'inline-block',
+  height: '338px',
+};
+
+export const AvatarSx: SxProps = {
+  position: 'absolute',
+  top: '50%',
+  left: '-43px',
+  transform: 'translateY(-50%)',
+  width: '86px',
+  height: '86px',
+  backgroundColor: 'background.default',
+  borderRadius: '43px',
+  display: 'flex',
+  flexDirection: 'row',
+  justifyContent: 'center',
+  alignItems: 'center',
+};
+
+export const ImageCaptionSx: SxProps = {
+  fontSize: '23px',
+  fontWeight: 500,
+  lineHeight: '30px',
+  color: 'primary.contrastText',
+  marginTop: '10px',
+};
+
+export const ProjectDescriptionSx: SxProps = {
+  fontSize: '22px',
+  fontWeight: 300,
+  lineHeight: '30px',
+  marginTop: '10px',
 };

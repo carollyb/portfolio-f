@@ -2,7 +2,7 @@ import { GlobalStyles } from '@mui/material';
 import { Inter, Karantina } from 'next/font/google';
 
 export const inter = Inter({
-  weight: ['400', '500'],
+  weight: ['300', '400', '500'],
   style: ['normal'],
   subsets: ['latin'],
   display: 'swap',

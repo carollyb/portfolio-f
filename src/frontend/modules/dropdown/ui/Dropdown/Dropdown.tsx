@@ -1,14 +1,24 @@
-import { Box, Link, Stack, Typography } from '@mui/material';
+import { Avatar, Box, Link, Stack, Typography } from '@mui/material';
 import useDropdown from '../../hooks/useDropdown';
 import { Pill } from '@/frontend/modules/pill/ui/Pill';
 import {
+  AvatarSx,
   BoxSx,
   DropdownSx,
+  FeaturedProjectBoxSx,
+  FeaturedProjectSectionSx,
+  FeaturedProjectTextSx,
+  ImageCaptionSx,
   LinksSx,
   PageLinksSx,
+  ProjectDescriptionSx,
+  ProjectImageAndLinksBoxSx,
   SocialLinksSx,
   TextLinksSx,
+  ViewProjectsBoxSx,
+  ViewProjectsTextSx,
 } from './styles';
+import Image from 'next/image';
 
 const menuItems = [
   {
@@ -44,7 +54,7 @@ export const Dropdown = () => {
   const { toggleDrawer } = useDropdown();
 
   return (
-    <Box
+    <Stack
       sx={DropdownSx}
       role='presentation'
       onClick={() => toggleDrawer(false)}
@@ -63,7 +73,34 @@ export const Dropdown = () => {
             </>
           ))}
         </Stack>
-        <Box>Featured Project</Box>
+        <Box sx={FeaturedProjectBoxSx}>
+          <Stack sx={FeaturedProjectSectionSx}>
+            <Typography sx={FeaturedProjectTextSx}>Featured Project</Typography>
+            <hr />
+            <Box sx={ViewProjectsBoxSx}>
+              <Typography variant='subtitle2' sx={ViewProjectsTextSx}>
+                View Projects
+              </Typography>
+            </Box>
+          </Stack>
+          <Box sx={ProjectImageAndLinksBoxSx}>
+            <Image
+              src='/alojinha.png'
+              alt='alojinha'
+              width={447}
+              height={338}
+              style={{ display: 'block' }}
+            />
+            <Avatar sx={AvatarSx}>
+              <Image src='/arrow.png' alt='arrow' width={27} height={27} />
+            </Avatar>
+            <Typography sx={ImageCaptionSx} variant='body2'>
+              aLojinha
+            </Typography>
+
+            <Typography sx={ProjectDescriptionSx}>Branding & Style</Typography>
+          </Box>
+        </Box>
       </Box>
       <hr />
       <Box sx={SocialLinksSx}>
@@ -71,6 +108,6 @@ export const Dropdown = () => {
           <Pill key={index} link={item.link} title={item.title} />
         ))}
       </Box>
-    </Box>
+    </Stack>
   );
 };
