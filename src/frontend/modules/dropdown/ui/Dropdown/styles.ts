@@ -64,28 +64,13 @@ export const ViewProjectsBoxSx: SxProps = {
 };
 
 export const ViewProjectsTextSx: SxProps = {
-  textDecoration: 'underline',
+  color: 'text.primary',
 };
 
 export const ProjectImageAndLinksBoxSx: SxProps = {
   position: 'relative',
   display: 'inline-block',
   height: '338px',
-};
-
-export const AvatarSx: SxProps = {
-  position: 'absolute',
-  top: '50%',
-  left: '-43px',
-  transform: 'translateY(-50%)',
-  width: '86px',
-  height: '86px',
-  backgroundColor: 'background.default',
-  borderRadius: '43px',
-  display: 'flex',
-  flexDirection: 'row',
-  justifyContent: 'center',
-  alignItems: 'center',
 };
 
 export const ImageCaptionSx: SxProps = {

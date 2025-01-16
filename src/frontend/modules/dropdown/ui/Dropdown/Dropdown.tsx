@@ -2,7 +2,6 @@ import { Avatar, Box, Link, Stack, Typography } from '@mui/material';
 import useDropdown from '../../hooks/useDropdown';
 import { Pill } from '@/frontend/modules/pill/ui/Pill';
 import {
-  AvatarSx,
   BoxSx,
   DropdownSx,
   FeaturedProjectBoxSx,
@@ -19,6 +18,7 @@ import {
   ViewProjectsTextSx,
 } from './styles';
 import Image from 'next/image';
+import { ArrowLink } from '@/frontend/modules/arrowlink/ui/Arrowlink';
 
 const menuItems = [
   {
@@ -76,11 +76,12 @@ export const Dropdown = () => {
         <Box sx={FeaturedProjectBoxSx}>
           <Stack sx={FeaturedProjectSectionSx}>
             <Typography sx={FeaturedProjectTextSx}>Featured Project</Typography>
-            <hr />
             <Box sx={ViewProjectsBoxSx}>
-              <Typography variant='subtitle2' sx={ViewProjectsTextSx}>
-                View Projects
-              </Typography>
+              <Link href='/projects'>
+                <Typography variant='subtitle2' sx={ViewProjectsTextSx}>
+                  View Projects
+                </Typography>
+              </Link>
             </Box>
           </Stack>
           <Box sx={ProjectImageAndLinksBoxSx}>
@@ -91,9 +92,7 @@ export const Dropdown = () => {
               height={338}
               style={{ display: 'block' }}
             />
-            <Avatar sx={AvatarSx}>
-              <Image src='/arrow.png' alt='arrow' width={27} height={27} />
-            </Avatar>
+            <ArrowLink />
             <Typography sx={ImageCaptionSx} variant='body2'>
               aLojinha
             </Typography>
