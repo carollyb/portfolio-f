@@ -3,10 +3,26 @@ import { useTheme } from '@mui/material/styles';
 import useDropdown from '@/frontend/modules/dropdown/hooks/useDropdown';
 import { DotSx, DrawerSx, HeaderSx, TextSx } from './styles';
 import { Dropdown } from '@/frontend/modules/dropdown/ui/Dropdown';
+import { useEffect } from 'react';
 
 export const Header = () => {
   const { zIndex } = useTheme();
   const { open, toggleDrawer } = useDropdown();
+
+  useEffect(() => {
+    if (open) {
+      document.body.style.overflow = 'hidden';
+      document.documentElement.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+      document.documentElement.style.overflow = '';
+    }
+
+    return () => {
+      document.body.style.overflow = '';
+      document.documentElement.style.overflow = '';
+    };
+  }, [open]);
 
   return (
     <Box

@@ -80,7 +80,7 @@ const projects: { [key: string]: Project[] } = {
       year: 2024,
     },
     {
-      title: 'aLojinha',
+      title: 'ALOJINHA',
       description:
         '“A lojinha” is a women-founded, women-produced business with a mission to bring more sustainability into everyday life.',
       year: 2021,

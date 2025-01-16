@@ -10,9 +10,10 @@ function a11yProps(index: number) {
 
 interface FooterProps {
   setViewMode: (view: 'grid' | 'list') => void;
+  setTag: (tag: string) => void;
 }
 
-export const Footer = ({ setViewMode }: FooterProps) => {
+export const Footer = ({ setViewMode, setTag }: FooterProps) => {
   const [value, setValue] = useState(0);
 
   const handleChange = (event: React.SyntheticEvent, newValue: number) => {
@@ -71,10 +72,26 @@ export const Footer = ({ setViewMode }: FooterProps) => {
             onChange={handleChange}
             aria-label='basic tabs example'
           >
-            <Tab label='View All' {...a11yProps(0)} />
-            <Tab label='UX/UI Design' {...a11yProps(1)} />
-            <Tab label='Art Direction' {...a11yProps(2)} />
-            <Tab label='Illustrations' {...a11yProps(2)} />
+            <Tab
+              onClick={() => setTag('all')}
+              label='View All'
+              {...a11yProps(0)}
+            />
+            <Tab
+              onClick={() => setTag('ux')}
+              label='UX/UI Design'
+              {...a11yProps(1)}
+            />
+            <Tab
+              onClick={() => setTag('art')}
+              label='Art Direction'
+              {...a11yProps(2)}
+            />
+            <Tab
+              onClick={() => setTag('illustration')}
+              label='Illustrations'
+              {...a11yProps(2)}
+            />
           </Tabs>
         </Box>
       </Box>

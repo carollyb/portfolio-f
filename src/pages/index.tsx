@@ -6,12 +6,14 @@ import { useState } from 'react';
 
 export default function Home() {
   const [viewMode, setViewMode] = useState<'grid' | 'list'>('grid');
+  const [tag, setTag] = useState<string>('all');
+
   return (
     <>
       <Header />
       <SplashScreen />
-      <Projects tag='all' view={viewMode} />
-      <Footer setViewMode={setViewMode} />
+      <Projects tag={tag} view={viewMode} />
+      <Footer setTag={setTag} setViewMode={setViewMode} />
     </>
   );
 }
