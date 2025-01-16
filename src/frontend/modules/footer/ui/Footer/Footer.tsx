@@ -1,4 +1,4 @@
-import { Box, Tab, Tabs, Typography } from '@mui/material';
+import { Box, Button, Tab, Tabs, Typography } from '@mui/material';
 import { useState } from 'react';
 
 function a11yProps(index: number) {
@@ -8,7 +8,11 @@ function a11yProps(index: number) {
   };
 }
 
-export const Footer = () => {
+interface FooterProps {
+  setViewMode: (view: 'grid' | 'list') => void;
+}
+
+export const Footer = ({ setViewMode }: FooterProps) => {
   const [value, setValue] = useState(0);
 
   const handleChange = (event: React.SyntheticEvent, newValue: number) => {
@@ -37,12 +41,22 @@ export const Footer = () => {
           gap: '20px',
         }}
       >
-        <Typography variant='subtitle2' sx={{ color: 'primary.contrastText' }}>
-          Grid
-        </Typography>
-        <Typography variant='subtitle2' sx={{ color: 'primary.contrastText' }}>
-          List
-        </Typography>
+        <Button onClick={() => setViewMode('grid')}>
+          <Typography
+            variant='subtitle2'
+            sx={{ color: 'primary.contrastText' }}
+          >
+            Grid
+          </Typography>
+        </Button>
+        <Button onClick={() => setViewMode('list')}>
+          <Typography
+            variant='subtitle2'
+            sx={{ color: 'primary.contrastText' }}
+          >
+            List
+          </Typography>
+        </Button>
       </Box>
       <Box
         sx={{
