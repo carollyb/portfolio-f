@@ -9,8 +9,14 @@ export const ListStackSx: SxProps = {
 };
 
 export const GridStackSx: SxProps = {
+  display: 'flex',
+  flexDirection: 'row',
+  justifyContent: 'space-between',
+  flexWrap: 'wrap',
+  gap: '20px',
   paddingX: '40px',
   paddingY: '32px',
   backgroundColor: 'background.paper',
   borderTop: '2px solid #1300A2',
+  height: 'auto',
 };

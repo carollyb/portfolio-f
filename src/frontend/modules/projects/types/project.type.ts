@@ -8,5 +8,5 @@ export type Project = {
   year: number;
   description: string;
   tags?: string[];
-  image?: string;
+  cover: string;
 };

@@ -64,7 +64,7 @@ export const Dropdown = () => {
         <Stack sx={PageLinksSx}>
           {pageItems.map((page, index) => (
             <>
-              <Link key={index} sx={LinksSx} href={page.href}>
+              <Link sx={LinksSx} href={page.href}>
                 <Typography variant='h1' sx={TextLinksSx}>
                   {page.name}
                 </Typography>

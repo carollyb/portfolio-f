@@ -3,6 +3,7 @@ import { getProjects } from '../../server/get-projects.server';
 import { ProjectProps } from '../../types/project.type';
 import { GridStackSx, ListStackSx } from './styles';
 import { useEffect } from 'react';
+import { ProjectCard } from '@/frontend/modules/projectCard/ui/ProjectCard';
 
 export const Projects = ({ tag, view }: ProjectProps) => {
   useEffect(() => {
@@ -28,31 +29,23 @@ export const Projects = ({ tag, view }: ProjectProps) => {
         </Typography>
       </Box>
       {getProjects(tag).map((project, index) => (
-        <Box
-          sx={{
-            marginTop: index === 0 ? '24px' : '0',
-            display: 'flex',
-            flexDirection: 'row',
-            justifyContent: 'space-between',
-            height: '74px',
-          }}
-        >
-          <Typography
-            key={index}
-            variant='body2'
-            sx={{ color: 'text.primary' }}
-          >
-            {project.title}
-          </Typography>
-        </Box>
+        <ProjectCard
+          key={index}
+          cover={project.cover}
+          title={project.title}
+          path='/'
+        />
       ))}
     </Stack>
   ) : (
     <Stack sx={GridStackSx}>
       {getProjects(tag).map((project, index) => (
-        <Typography key={index} variant='body2' sx={{ color: 'text.primary' }}>
-          {project.title}
-        </Typography>
+        <ProjectCard
+          key={index}
+          cover={project.cover}
+          title={project.title}
+          path='/'
+        />
       ))}
     </Stack>
   );
