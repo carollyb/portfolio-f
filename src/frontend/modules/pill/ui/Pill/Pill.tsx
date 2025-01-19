@@ -2,7 +2,7 @@ import { Box, Link, Typography } from '@mui/material';
 
 type PillProps = {
   title: string;
-  link: string;
+  link?: string;
 };
 
 export const Pill = ({ title, link }: PillProps) => {
@@ -19,9 +19,13 @@ export const Pill = ({ title, link }: PillProps) => {
         textAlign: 'center',
       }}
     >
-      <Link style={{ textDecoration: 'none' }} href={link} target='_blank'>
+      {link ? (
+        <Link style={{ textDecoration: 'none' }} href={link} target='_blank'>
+          <Typography variant='caption'>{title}</Typography>
+        </Link>
+      ) : (
         <Typography variant='caption'>{title}</Typography>
-      </Link>
+      )}
     </Box>
   );
 };

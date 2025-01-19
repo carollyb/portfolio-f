@@ -1,4 +1,4 @@
-import { Avatar, Box, Link, Stack, Typography } from '@mui/material';
+import { Box, Link, Stack, Typography } from '@mui/material';
 import useDropdown from '../../hooks/useDropdown';
 import { Pill } from '@/frontend/modules/pill/ui/Pill';
 import {

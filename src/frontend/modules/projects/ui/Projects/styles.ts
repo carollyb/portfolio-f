@@ -4,7 +4,7 @@ export const ListStackSx: SxProps = {
   paddingX: '40px',
   paddingY: '32px',
   backgroundColor: 'background.paper',
-  height: '800px',
+  height: '964px',
   borderTop: '1px solid #707070',
 };
 

@@ -7,6 +7,6 @@ export type Project = {
   title: string;
   year: number;
   description: string;
-  tags?: string[];
+  tags: string[];
   cover: string;
 };
