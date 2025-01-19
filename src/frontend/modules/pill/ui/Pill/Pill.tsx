@@ -14,7 +14,7 @@ export const Pill = ({ title, link }: PillProps) => {
         justifyContent: 'center',
         width: '115px',
         height: '40px',
-        border: '1px solid',
+        border: '1px solid #707070',
         borderRadius: '20px',
         textAlign: 'center',
       }}
