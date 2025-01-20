@@ -31,7 +31,7 @@ export const theme = createTheme({
       // desktop - títulos dos projetos
       fontFamily: `${inter.style.fontFamily}`,
       fontSize: '130px',
-      fontWeight: 500,
+      fontWeight: 400,
       lineHeight: '130px',
       letterSpacing: '-0.1em',
     },

@@ -9,4 +9,5 @@ export type Project = {
   description: string;
   tags: string[];
   cover: string;
+  slug: string;
 };

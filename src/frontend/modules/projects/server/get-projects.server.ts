@@ -1,14 +1,15 @@
 import { Project } from '../types/project.type';
 
-const projects: { [key: string]: Project[] } = {
+export const projects: { [key: string]: Project[] } = {
   ux: [
     {
       title: 'MIMAR',
       description:
-        'The concept behind the screens is to A meal-prep app where users customize ingredients and portions, with a personal chef crafting fresh, tailored meals.',
+        'A meal-prep app where users customize ingredients and portions, with a personal chef crafting fresh, tailored meals.',
       year: 2020,
       cover: '/mimar_cover.png',
       tags: ['UX/UI Design', 'UX Research'],
+      slug: 'mimar',
     },
     {
       title: 'BIKEAPP',
@@ -17,6 +18,7 @@ const projects: { [key: string]: Project[] } = {
       year: 2021,
       cover: '/bikeapp_cover.png',
       tags: ['UX/UI Design', 'UX Research'],
+      slug: 'bikeapp',
     },
     {
       title: 'HMP',
@@ -25,6 +27,7 @@ const projects: { [key: string]: Project[] } = {
       year: 2023,
       cover: '/hmp_cover.png',
       tags: ['UX/UI Design', 'UX Research'],
+      slug: 'hmp',
     },
     {
       title: 'WHERE2GO',
@@ -33,6 +36,7 @@ const projects: { [key: string]: Project[] } = {
       year: 2024,
       cover: '/where2go_cover.png',
       tags: ['UX/UI Design', 'UX Research'],
+      slug: 'where2go',
     },
   ],
   art: [
@@ -43,6 +47,7 @@ const projects: { [key: string]: Project[] } = {
       year: 2021,
       cover: '/alojinha_cover.png',
       tags: ['Art Direction', 'Logo', 'Branding'],
+      slug: 'alojinha',
     },
   ],
   illustration: [
@@ -53,6 +58,7 @@ const projects: { [key: string]: Project[] } = {
       year: 2019,
       cover: '/hortus_cover.png',
       tags: ['Illustration', 'Photoshop', 'Illustrator', 'InDesign'],
+      slug: 'hortus',
     },
     {
       title: 'A PLACE TO EAT',
@@ -61,6 +67,7 @@ const projects: { [key: string]: Project[] } = {
       year: 2019,
       cover: '/aplacetoeat_cover.png',
       tags: ['Illustration', 'Photoshop', 'Illustrator', 'InDesign'],
+      slug: 'aplacetoeat',
     },
     {
       title: 'PRESTON’S MOSQUE',
@@ -68,6 +75,7 @@ const projects: { [key: string]: Project[] } = {
       year: 2019,
       cover: '/preston_cover.png',
       tags: ['Illustration', 'Photoshop', 'Illustrator', 'InDesign'],
+      slug: 'preston',
     },
   ],
   all: [
@@ -78,6 +86,7 @@ const projects: { [key: string]: Project[] } = {
       year: 2020,
       cover: '/mimar_cover.png',
       tags: ['UX/UI Design', 'UX Research'],
+      slug: 'mimar',
     },
     {
       title: 'WHERE2GO',
@@ -86,6 +95,7 @@ const projects: { [key: string]: Project[] } = {
       year: 2024,
       cover: '/where2go_cover.png',
       tags: ['UX/UI Design', 'UX Research'],
+      slug: 'where2go',
     },
     {
       title: 'BIKEAPP',
@@ -94,6 +104,7 @@ const projects: { [key: string]: Project[] } = {
       year: 2021,
       cover: '/bikeapp_cover.png',
       tags: ['UX/UI Design', 'UX Research'],
+      slug: 'bikeapp',
     },
     {
       title: 'HORTUS CONCLUSUS',
@@ -102,6 +113,7 @@ const projects: { [key: string]: Project[] } = {
       year: 2019,
       cover: '/hortus_cover.png',
       tags: ['Illustration', 'Photoshop', 'Illustrator', 'InDesign'],
+      slug: 'hortus',
     },
     {
       title: 'PRESTON’S MOSQUE',
@@ -109,6 +121,7 @@ const projects: { [key: string]: Project[] } = {
       year: 2019,
       cover: '/preston_cover.png',
       tags: ['Illustration', 'Photoshop', 'Illustrator', 'InDesign'],
+      slug: 'preston',
     },
     {
       title: 'HMP',
@@ -117,6 +130,7 @@ const projects: { [key: string]: Project[] } = {
       year: 2023,
       cover: '/hmp_cover.png',
       tags: ['UX/UI Design', 'UX Research'],
+      slug: 'hmp',
     },
     {
       title: 'A PLACE TO EAT',
@@ -125,6 +139,7 @@ const projects: { [key: string]: Project[] } = {
       year: 2019,
       cover: '/aplacetoeat_cover.png',
       tags: ['Illustration', 'Photoshop', 'Illustrator', 'InDesign'],
+      slug: 'aplacetoeat',
     },
     {
       title: 'ALOJINHA',
@@ -133,6 +148,7 @@ const projects: { [key: string]: Project[] } = {
       year: 2021,
       cover: '/alojinha_cover.png',
       tags: ['Art Direction', 'Logo', 'Branding'],
+      slug: 'alojinha',
     },
   ],
 };

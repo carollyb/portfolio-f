@@ -64,7 +64,7 @@ export const Projects = ({ tag, view }: ProjectProps) => {
           key={index}
           cover={project.cover}
           title={project.title}
-          path='/'
+          path={`/project/${project.slug}`}
         />
       ))}
     </Stack>
