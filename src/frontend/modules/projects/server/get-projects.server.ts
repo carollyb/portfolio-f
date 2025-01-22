@@ -10,6 +10,7 @@ export const projects: { [key: string]: Project[] } = {
       cover: '/mimar_cover.png',
       tags: ['UX/UI Design', 'UX Research'],
       slug: 'mimar',
+      image: '/mimar_image.png',
     },
     {
       title: 'BIKEAPP',
@@ -19,6 +20,7 @@ export const projects: { [key: string]: Project[] } = {
       cover: '/bikeapp_cover.png',
       tags: ['UX/UI Design', 'UX Research'],
       slug: 'bikeapp',
+      image: '/bikeapp_image.png',
     },
     {
       title: 'HMP',
@@ -28,6 +30,7 @@ export const projects: { [key: string]: Project[] } = {
       cover: '/hmp_cover.png',
       tags: ['UX/UI Design', 'UX Research'],
       slug: 'hmp',
+      image: '/hmp_image.png',
     },
     {
       title: 'WHERE2GO',
@@ -37,6 +40,7 @@ export const projects: { [key: string]: Project[] } = {
       cover: '/where2go_cover.png',
       tags: ['UX/UI Design', 'UX Research'],
       slug: 'where2go',
+      image: '/where2go_image.png',
     },
   ],
   art: [
@@ -48,6 +52,7 @@ export const projects: { [key: string]: Project[] } = {
       cover: '/alojinha_cover.png',
       tags: ['Art Direction', 'Logo', 'Branding'],
       slug: 'alojinha',
+      image: '/alojinha_image.png',
     },
   ],
   illustration: [
@@ -59,6 +64,7 @@ export const projects: { [key: string]: Project[] } = {
       cover: '/hortus_cover.png',
       tags: ['Illustration', 'Photoshop', 'Illustrator', 'InDesign'],
       slug: 'hortus',
+      image: '/hortus_image.png',
     },
     {
       title: 'A PLACE TO EAT',
@@ -68,6 +74,7 @@ export const projects: { [key: string]: Project[] } = {
       cover: '/aplacetoeat_cover.png',
       tags: ['Illustration', 'Photoshop', 'Illustrator', 'InDesign'],
       slug: 'aplacetoeat',
+      image: '/aplacetoeat_image.png',
     },
     {
       title: 'PRESTON’S MOSQUE',
@@ -76,6 +83,7 @@ export const projects: { [key: string]: Project[] } = {
       cover: '/preston_cover.png',
       tags: ['Illustration', 'Photoshop', 'Illustrator', 'InDesign'],
       slug: 'preston',
+      image: '/preston_image.png',
     },
   ],
   all: [
@@ -87,6 +95,7 @@ export const projects: { [key: string]: Project[] } = {
       cover: '/mimar_cover.png',
       tags: ['UX/UI Design', 'UX Research'],
       slug: 'mimar',
+      image: '/mimar_image.png',
     },
     {
       title: 'WHERE2GO',
@@ -96,6 +105,7 @@ export const projects: { [key: string]: Project[] } = {
       cover: '/where2go_cover.png',
       tags: ['UX/UI Design', 'UX Research'],
       slug: 'where2go',
+      image: '/where2go_image.png',
     },
     {
       title: 'BIKEAPP',
@@ -105,6 +115,7 @@ export const projects: { [key: string]: Project[] } = {
       cover: '/bikeapp_cover.png',
       tags: ['UX/UI Design', 'UX Research'],
       slug: 'bikeapp',
+      image: '/bikeapp_image.png',
     },
     {
       title: 'HORTUS CONCLUSUS',
@@ -114,6 +125,7 @@ export const projects: { [key: string]: Project[] } = {
       cover: '/hortus_cover.png',
       tags: ['Illustration', 'Photoshop', 'Illustrator', 'InDesign'],
       slug: 'hortus',
+      image: '/hortus_image.png',
     },
     {
       title: 'PRESTON’S MOSQUE',
@@ -122,6 +134,7 @@ export const projects: { [key: string]: Project[] } = {
       cover: '/preston_cover.png',
       tags: ['Illustration', 'Photoshop', 'Illustrator', 'InDesign'],
       slug: 'preston',
+      image: '/preston_image.png',
     },
     {
       title: 'HMP',
@@ -131,6 +144,7 @@ export const projects: { [key: string]: Project[] } = {
       cover: '/hmp_cover.png',
       tags: ['UX/UI Design', 'UX Research'],
       slug: 'hmp',
+      image: '/hmp_image.png',
     },
     {
       title: 'A PLACE TO EAT',
@@ -140,6 +154,7 @@ export const projects: { [key: string]: Project[] } = {
       cover: '/aplacetoeat_cover.png',
       tags: ['Illustration', 'Photoshop', 'Illustrator', 'InDesign'],
       slug: 'aplacetoeat',
+      image: '/aplacetoeat_image.png',
     },
     {
       title: 'ALOJINHA',
@@ -149,6 +164,7 @@ export const projects: { [key: string]: Project[] } = {
       cover: '/alojinha_cover.png',
       tags: ['Art Direction', 'Logo', 'Branding'],
       slug: 'alojinha',
+      image: '/alojinha_image.png',
     },
   ],
 };

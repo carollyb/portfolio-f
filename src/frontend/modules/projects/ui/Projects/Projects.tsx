@@ -2,14 +2,10 @@ import { Box, Stack, Typography } from '@mui/material';
 import { getProjects } from '../../server/get-projects.server';
 import { ProjectProps } from '../../types/project.type';
 import { GridStackSx, ListStackSx } from './styles';
-import { useEffect } from 'react';
 import { ProjectCard } from '@/frontend/modules/projectCard/ui/ProjectCard';
 import { ProjectListItem } from '@/frontend/modules/projectListItem/ui/ProjectListItem';
 
 export const Projects = ({ tag, view }: ProjectProps) => {
-  useEffect(() => {
-    console.log(view);
-  }, [view]);
   return view === 'list' ? (
     <Stack sx={ListStackSx}>
       <Box

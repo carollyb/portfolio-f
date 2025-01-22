@@ -1,10 +1,13 @@
+import { ArrowLink } from '@/frontend/modules/arrowlink/ui/Arrowlink';
 import { Header } from '@/frontend/modules/header/ui/Header';
 import { Pill } from '@/frontend/modules/pill/ui/Pill';
 import { getProjectByName } from '@/frontend/modules/projects/server/get-project-by-name.server';
 import { getProjects } from '@/frontend/modules/projects/server/get-projects.server';
 import { Project } from '@/frontend/modules/projects/types/project.type';
-import { Box, Typography } from '@mui/material';
+import { Box, Button, Typography } from '@mui/material';
 import { GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from 'next';
+import Image from 'next/image';
+import { useRouter } from 'next/router';
 
 export const getStaticPaths = (() => {
   const projects = getProjects('all');
@@ -29,6 +32,7 @@ export const getStaticProps = ((context) => {
 export default function ProjectPage({
   project,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
+  const router = useRouter();
   return (
     <>
       <Header />
@@ -40,7 +44,40 @@ export default function ProjectPage({
           padding: '40px 45px',
         }}
       >
-        <img src={project.cover} />
+        <Box
+          sx={{
+            display: 'flex',
+            flexDirection: 'row',
+            justifyContent: 'space-between',
+            alignItems: 'center',
+            width: '100%',
+          }}
+        >
+          <Typography
+            variant='h2'
+            sx={{
+              color: 'primary.main',
+              marginTop: '34px',
+              justifySelf: 'start',
+            }}
+          >
+            {project.year}
+          </Typography>
+          <Box sx={{ position: 'relative', display: 'inline-block' }}>
+            <Image
+              src={project.image}
+              alt='Project image'
+              width={450}
+              height={460}
+              quality={100}
+              style={{ display: 'block' }}
+            />
+            <ArrowLink />
+          </Box>
+          <Box>
+            <Button onClick={() => router.back()}>Return to projects</Button>
+          </Box>
+        </Box>
         <Typography
           variant='h1'
           sx={{ color: 'primary.main', marginTop: '34px' }}

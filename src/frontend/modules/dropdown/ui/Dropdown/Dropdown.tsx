@@ -75,9 +75,13 @@ export const Dropdown = () => {
         </Stack>
         <Box sx={FeaturedProjectBoxSx}>
           <Stack sx={FeaturedProjectSectionSx}>
-            <Typography sx={FeaturedProjectTextSx}>Featured Project</Typography>
+            <Link href={'/project/alojinha'}>
+              <Typography sx={FeaturedProjectTextSx}>
+                Featured Project
+              </Typography>
+            </Link>
             <Box sx={ViewProjectsBoxSx}>
-              <Link href='/projects'>
+              <Link href='/'>
                 <Typography variant='subtitle2' sx={ViewProjectsTextSx}>
                   View Projects
                 </Typography>
