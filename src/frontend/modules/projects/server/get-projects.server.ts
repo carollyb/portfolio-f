@@ -11,6 +11,7 @@ export const projects: { [key: string]: Project[] } = {
       tags: ['UX/UI Design', 'UX Research'],
       slug: 'mimar',
       image: '/mimar_image.png',
+      projectImages: ['/mimar_project.jpg'],
     },
     {
       title: 'BIKEAPP',
@@ -21,6 +22,7 @@ export const projects: { [key: string]: Project[] } = {
       tags: ['UX/UI Design', 'UX Research'],
       slug: 'bikeapp',
       image: '/bikeapp_image.png',
+      projectImages: ['/bike_project.jpg'],
     },
     {
       title: 'HMP',
@@ -31,6 +33,7 @@ export const projects: { [key: string]: Project[] } = {
       tags: ['UX/UI Design', 'UX Research'],
       slug: 'hmp',
       image: '/hmp_image.png',
+      projectImages: ['/hmp_project.png'],
     },
     {
       title: 'WHERE2GO',
@@ -41,6 +44,7 @@ export const projects: { [key: string]: Project[] } = {
       tags: ['UX/UI Design', 'UX Research'],
       slug: 'where2go',
       image: '/where2go_image.png',
+      projectImages: ['/where2go_project.webp'],
     },
   ],
   art: [
@@ -53,6 +57,7 @@ export const projects: { [key: string]: Project[] } = {
       tags: ['Art Direction', 'Logo', 'Branding'],
       slug: 'alojinha',
       image: '/alojinha_image.png',
+      projectImages: ['/alojinha_project.webp'],
     },
   ],
   illustration: [
@@ -65,6 +70,15 @@ export const projects: { [key: string]: Project[] } = {
       tags: ['Illustration', 'Photoshop', 'Illustrator', 'InDesign'],
       slug: 'hortus',
       image: '/hortus_image.png',
+      projectImages: [
+        '/hortus_project_1.webp',
+        '/hortus_project_2.webp',
+        '/hortus_project_3.webp',
+        '/hortus_project_4.webp',
+        '/hortus_project_5.webp',
+        '/hortus_project_6.webp',
+        '/hortus_project_7.webp',
+      ],
     },
     {
       title: 'A PLACE TO EAT',
@@ -75,6 +89,7 @@ export const projects: { [key: string]: Project[] } = {
       tags: ['Illustration', 'Photoshop', 'Illustrator', 'InDesign'],
       slug: 'aplacetoeat',
       image: '/aplacetoeat_image.png',
+      projectImages: ['/aplacetoeat_project.png'],
     },
     {
       title: 'PRESTON’S MOSQUE',
@@ -84,6 +99,7 @@ export const projects: { [key: string]: Project[] } = {
       tags: ['Illustration', 'Photoshop', 'Illustrator', 'InDesign'],
       slug: 'preston',
       image: '/preston_image.png',
+      projectImages: ['/preston_project_1.webp', '/preston_project_2.webp'],
     },
   ],
   all: [
@@ -96,6 +112,7 @@ export const projects: { [key: string]: Project[] } = {
       tags: ['UX/UI Design', 'UX Research'],
       slug: 'mimar',
       image: '/mimar_image.png',
+      projectImages: ['/mimar_project.jpg'],
     },
     {
       title: 'WHERE2GO',
@@ -106,6 +123,7 @@ export const projects: { [key: string]: Project[] } = {
       tags: ['UX/UI Design', 'UX Research'],
       slug: 'where2go',
       image: '/where2go_image.png',
+      projectImages: ['/where2go_project.webp'],
     },
     {
       title: 'BIKEAPP',
@@ -116,6 +134,7 @@ export const projects: { [key: string]: Project[] } = {
       tags: ['UX/UI Design', 'UX Research'],
       slug: 'bikeapp',
       image: '/bikeapp_image.png',
+      projectImages: ['/bike_project.jpg'],
     },
     {
       title: 'HORTUS CONCLUSUS',
@@ -126,6 +145,15 @@ export const projects: { [key: string]: Project[] } = {
       tags: ['Illustration', 'Photoshop', 'Illustrator', 'InDesign'],
       slug: 'hortus',
       image: '/hortus_image.png',
+      projectImages: [
+        '/hortus_project_1.webp',
+        '/hortus_project_2.webp',
+        '/hortus_project_3.webp',
+        '/hortus_project_4.webp',
+        '/hortus_project_5.webp',
+        '/hortus_project_6.webp',
+        '/hortus_project_7.webp',
+      ],
     },
     {
       title: 'PRESTON’S MOSQUE',
@@ -135,6 +163,7 @@ export const projects: { [key: string]: Project[] } = {
       tags: ['Illustration', 'Photoshop', 'Illustrator', 'InDesign'],
       slug: 'preston',
       image: '/preston_image.png',
+      projectImages: ['/preston_project_1.webp', '/preston_project_2.webp'],
     },
     {
       title: 'HMP',
@@ -145,6 +174,7 @@ export const projects: { [key: string]: Project[] } = {
       tags: ['UX/UI Design', 'UX Research'],
       slug: 'hmp',
       image: '/hmp_image.png',
+      projectImages: ['/hmp_project.png'],
     },
     {
       title: 'A PLACE TO EAT',
@@ -155,6 +185,7 @@ export const projects: { [key: string]: Project[] } = {
       tags: ['Illustration', 'Photoshop', 'Illustrator', 'InDesign'],
       slug: 'aplacetoeat',
       image: '/aplacetoeat_image.png',
+      projectImages: ['/aplacetoeat_project.png'],
     },
     {
       title: 'ALOJINHA',
@@ -165,6 +196,7 @@ export const projects: { [key: string]: Project[] } = {
       tags: ['Art Direction', 'Logo', 'Branding'],
       slug: 'alojinha',
       image: '/alojinha_image.png',
+      projectImages: ['/alojinha_project.webp'],
     },
   ],
 };

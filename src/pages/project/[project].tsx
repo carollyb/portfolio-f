@@ -41,7 +41,7 @@ export default function ProjectPage({
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
-          padding: '40px 45px',
+          paddingY: '40px',
         }}
       >
         <Box
@@ -51,6 +51,7 @@ export default function ProjectPage({
             justifyContent: 'space-between',
             alignItems: 'center',
             width: '100%',
+            paddingX: '45px',
           }}
         >
           <Typography
@@ -94,6 +95,7 @@ export default function ProjectPage({
             borderTop: '1px solid #707070',
             borderBottom: '1px solid #707070',
             py: '26px',
+            px: '45px',
           }}
         >
           {project.tags.map((tag, index) => (
@@ -102,10 +104,28 @@ export default function ProjectPage({
         </Box>
         <Typography
           variant='body1'
-          sx={{ color: 'primary.main', marginTop: '34px' }}
+          sx={{
+            px: '45px',
+            color: 'primary.main',
+            marginTop: '34px',
+          }}
         >
           {project.description}
         </Typography>
+        <Box sx={{ marginTop: '80px' }}>
+          {project.projectImages.map((projectImage, index) => (
+            <Box>
+              <Image
+                key={index}
+                src={projectImage}
+                alt='project main image'
+                width={500}
+                height={500}
+                layout='responsive'
+              />
+            </Box>
+          ))}
+        </Box>
       </Box>
     </>
   );

@@ -11,4 +11,5 @@ export type Project = {
   cover: string;
   image: string;
   slug: string;
+  projectImages: string[];
 };
