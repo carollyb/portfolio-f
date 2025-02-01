@@ -13,7 +13,7 @@ export default function Home() {
       <Header />
       <SplashScreen />
       <Projects tag={tag} view={viewMode} />
-      <Footer setTag={setTag} setViewMode={setViewMode} />
+      <Footer setTag={setTag} setViewMode={setViewMode} viewMode={viewMode} />
     </>
   );
 }

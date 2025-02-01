@@ -1,5 +1,6 @@
 import { Box, Button, Tab, Tabs, Typography } from '@mui/material';
 import { useState } from 'react';
+import { ButtonsWrapperSx, ButtonSx, DividerSx, WrapperSx } from './styles';
 
 function a11yProps(index: number) {
   return {
@@ -9,51 +10,50 @@ function a11yProps(index: number) {
 }
 
 interface FooterProps {
+  viewMode: 'grid' | 'list';
   setViewMode: (view: 'grid' | 'list') => void;
   setTag: (tag: string) => void;
 }
 
-export const Footer = ({ setViewMode, setTag }: FooterProps) => {
+export const Footer = ({ setViewMode, setTag, viewMode }: FooterProps) => {
   const [value, setValue] = useState(0);
 
   const handleChange = (event: React.SyntheticEvent, newValue: number) => {
     setValue(newValue);
   };
   return (
-    <Box
-      sx={{
-        display: 'flex',
-        flexDirection: 'row',
-        justifyContent: 'space-between',
-        alignItems: 'center',
-        position: 'fixed',
-        bottom: '0px',
-        width: '100%',
-        height: '80px',
-        backgroundColor: 'background.paper',
-        paddingX: 10,
-        borderTop: '2px solid #1300A2',
-      }}
-    >
-      <Box
-        sx={{
-          display: 'flex',
-          flexDirection: 'row',
-          gap: '20px',
-        }}
-      >
-        <Button onClick={() => setViewMode('grid')}>
+    <Box sx={WrapperSx}>
+      <Box sx={ButtonsWrapperSx}>
+        <Button
+          sx={{
+            ...ButtonSx,
+            backgroundColor:
+              viewMode === 'grid' ? 'primary.main' : 'background.paper',
+          }}
+          onClick={() => setViewMode('grid')}
+        >
           <Typography
             variant='subtitle2'
-            sx={{ color: 'primary.contrastText' }}
+            sx={{
+              color: viewMode === 'grid' ? 'background.paper' : '#C4C4C4',
+            }}
           >
             Grid
           </Typography>
         </Button>
-        <Button onClick={() => setViewMode('list')}>
+        <Button
+          sx={{
+            ...ButtonSx,
+            backgroundColor:
+              viewMode === 'list' ? 'primary.main' : 'background.paper',
+          }}
+          onClick={() => setViewMode('list')}
+        >
           <Typography
             variant='subtitle2'
-            sx={{ color: 'primary.contrastText' }}
+            sx={{
+              color: viewMode === 'list' ? 'background.paper' : '#C4C4C4',
+            }}
           >
             List
           </Typography>
@@ -66,7 +66,7 @@ export const Footer = ({ setViewMode, setTag }: FooterProps) => {
           gap: '20px',
         }}
       >
-        <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
+        <Box sx={DividerSx}>
           <Tabs
             value={value}
             onChange={handleChange}
