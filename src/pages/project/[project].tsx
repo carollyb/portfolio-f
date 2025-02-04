@@ -114,9 +114,8 @@ export default function ProjectPage({
         </Typography>
         <Box sx={{ marginTop: '80px' }}>
           {project.projectImages.map((projectImage, index) => (
-            <Box>
+            <Box key={index}>
               <Image
-                key={index}
                 src={projectImage}
                 alt='project main image'
                 width={500}

@@ -61,15 +61,15 @@ export default function About() {
                 color: 'primary.light',
               }}
             >
-              Hi, I’m Fernanda (: <br /> I'm a designer and artist who loves to
+              {`Hi, I'm Fernanda (: <br /> I'm a designer and artist who loves to
               dive into different fields, including architecture. My portfolio
               showcases some key pieces of my journey so far. It features recent
               projects, some done in collaboration and others solo, but most of
               the visuals are my own creations (I'll point out the ones that
               aren't). The way I represent these projects is a reflection of my
               personal touch—whether it's through colors, objects, or the vibe
-              each space gives off. I hope you enjoy this as much as I’ve loved
-              putting it together throughout this adventure!
+              each space gives off. I hope you enjoy this as much as I've loved
+              putting it together throughout this adventure!`}
             </Typography>
           </Box>
         </Box>
