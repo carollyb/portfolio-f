@@ -19,21 +19,7 @@ import {
 } from './styles';
 import Image from 'next/image';
 import { ArrowLink } from '@/frontend/modules/arrowlink/ui/Arrowlink';
-
-const menuItems = [
-  {
-    link: 'https://www.instagram.com/fernandaf.e/',
-    title: 'Instagram',
-  },
-  {
-    link: 'https://www.linkedin.com/in/fernanda-eziquiel/',
-    title: 'Linkedin',
-  },
-  {
-    link: 'https://www.behance.net/fernandaeziquiel',
-    title: 'Behance',
-  },
-];
+import { menuItems } from '@/pages/about';
 
 const pageItems = [
   {

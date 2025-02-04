@@ -3,7 +3,7 @@ import { Pill } from '@/frontend/modules/pill/ui/Pill';
 import { Box, Divider, Stack, Typography } from '@mui/material';
 import Image from 'next/image';
 
-const menuItems = [
+export const menuItems = [
   {
     link: 'https://www.instagram.com/fernandaf.e/',
     title: 'Instagram',
@@ -21,7 +21,7 @@ export default function About() {
   return (
     <>
       <Header />
-      <Stack>
+      <Stack sx={{ paddingX: 10 }}>
         <Box
           sx={{
             width: '100%',
@@ -29,7 +29,6 @@ export default function About() {
             display: 'flex',
             flexDirection: 'row',
             alignItems: 'center',
-            paddingX: 10,
           }}
         >
           <Typography
@@ -41,14 +40,12 @@ export default function About() {
             About
           </Typography>
         </Box>
-        <Box sx={{ paddingX: 10 }}>
-          <Divider variant='middle' />
-        </Box>
+        <Divider variant='middle' />
         <Box
           sx={{
             display: 'flex',
             flexDirection: 'row',
-            paddingX: 10,
+
             paddingTop: '40px',
             gap: '42px',
             alignItems: 'center',
@@ -81,7 +78,6 @@ export default function About() {
             display: 'flex',
             flexDirection: 'row',
             marginTop: '45px',
-            paddingX: 10,
             paddingY: '21px',
             gap: '24px',
           }}
@@ -93,6 +89,7 @@ export default function About() {
         <Box
           sx={{
             height: '88px',
+            mx: '-40px',
             borderTop: '1px solid #1E00FF',
           }}
         ></Box>
