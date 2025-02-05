@@ -8,7 +8,6 @@ import { Project } from '@/frontend/modules/projects/types/project.type';
 import { Box, Button, Typography } from '@mui/material';
 import { GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from 'next';
 import Image from 'next/image';
-import { useRouter } from 'next/router';
 
 export const getStaticPaths = (() => {
   const projects = getProjects('all');
@@ -33,7 +32,6 @@ export const getStaticProps = ((context) => {
 export default function ProjectPage({
   project,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
-  const router = useRouter();
   return (
     <>
       <Header />
@@ -77,7 +75,6 @@ export default function ProjectPage({
             <ArrowLink />
           </Box>
           <Box>
-            {/* <Button onClick={() => router.back()}>Return to projects</Button> */}
             <ArrowUp />
           </Box>
         </Box>
