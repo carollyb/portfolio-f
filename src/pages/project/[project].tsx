@@ -1,4 +1,5 @@
 import { ArrowLink } from '@/frontend/modules/arrowlink/ui/Arrowlink';
+import ArrowUp from '@/frontend/modules/arrowlink/ui/ArrowUp/ArrowUp';
 import { Header } from '@/frontend/modules/header/ui/Header';
 import { Pill } from '@/frontend/modules/pill/ui/Pill';
 import { getProjectByName } from '@/frontend/modules/projects/server/get-project-by-name.server';
@@ -76,7 +77,8 @@ export default function ProjectPage({
             <ArrowLink />
           </Box>
           <Box>
-            <Button onClick={() => router.back()}>Return to projects</Button>
+            {/* <Button onClick={() => router.back()}>Return to projects</Button> */}
+            <ArrowUp />
           </Box>
         </Box>
         <Typography
