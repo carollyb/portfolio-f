@@ -5,7 +5,7 @@ import { Pill } from '@/frontend/modules/pill/ui/Pill';
 import { getProjectByName } from '@/frontend/modules/projects/server/get-project-by-name.server';
 import { getProjects } from '@/frontend/modules/projects/server/get-projects.server';
 import { Project } from '@/frontend/modules/projects/types/project.type';
-import { Box, Button, Typography } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import { GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from 'next';
 import Image from 'next/image';
 

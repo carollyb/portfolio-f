@@ -1,4 +1,4 @@
-import { Avatar, Box, Typography } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import Image from 'next/image';
 import { BoxSx, TextSx } from './styles';
 import Link from 'next/link';
