@@ -1,7 +1,17 @@
-import { Box, Button, Drawer, Typography } from '@mui/material';
+import { Box, Button, Divider, Drawer, Typography } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 import useDropdown from '@/frontend/modules/dropdown/hooks/useDropdown';
-import { DotSx, DrawerSx, HeaderSx, TextSx } from './styles';
+import {
+  DividerMobileSx,
+  DotMobileSx,
+  DotSx,
+  DrawerSx,
+  HeaderMobileSx,
+  HeaderSx,
+  MenuButtonDesktopSx,
+  MobileTextSx,
+  TextSx,
+} from './styles';
 import { Dropdown } from '@/frontend/modules/dropdown/ui/Dropdown';
 import { useEffect } from 'react';
 
@@ -31,10 +41,22 @@ export const Header = () => {
         zIndex: zIndex.drawer + 1,
       }}
     >
+      <Box sx={HeaderMobileSx}>
+        <Button onClick={toggleDrawer(!open)}>
+          <Box sx={DotMobileSx} />
+        </Button>
+        <Divider orientation='vertical' sx={DividerMobileSx} />
+        <Typography variant='subtitle1' sx={MobileTextSx}>
+          FERNANDA FERREIRA EZEQUIEL
+        </Typography>
+      </Box>
+
       <Typography variant='subtitle1' sx={TextSx}>
-        FERNANDA FERREIRA EZIQUIEL
+        FERNANDA FERREIRA EZEQUIEL
       </Typography>
-      <Button onClick={toggleDrawer(!open)}>MENU</Button>
+      <Button sx={MenuButtonDesktopSx} onClick={toggleDrawer(!open)}>
+        MENU
+      </Button>
       <Box sx={DotSx} />
       <Drawer
         sx={DrawerSx}

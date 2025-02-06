@@ -5,12 +5,15 @@ import {
 import { createTheme } from '@mui/material';
 
 export const theme = createTheme({
-  // breakpoints: {
-  //   xs: 0,
-  //   sm: 390,
-  //   md: 912,
-  //   lg: 1272,
-  // },
+  breakpoints: {
+    values: {
+      xs: 0,
+      sm: 390,
+      md: 912,
+      lg: 1272,
+      xl: 1366,
+    },
+  },
   spacing: [0, 1, 4, 8, 16, 20, 24, 28, 32, 36, 40, 44],
   palette: {
     primary: {

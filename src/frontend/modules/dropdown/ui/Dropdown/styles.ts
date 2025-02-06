@@ -6,14 +6,14 @@ export const DropdownSx: SxProps = {
   justifyContent: 'end',
   width: '100%',
   backgroundColor: 'background.paper',
-  height: '692px',
-  padding: '115px 40px 40px 30px',
+  height: { md: '692px', xs: 'auto' },
+  padding: { md: '115px 40px 40px 30px', xs: '16px 20px 24px 20px' },
 };
 
 export const BoxSx: SxProps = {
   display: 'flex',
-  flexDirection: 'row',
-  justifyContent: 'space-between',
+  flexDirection: { md: 'row', xs: 'column' },
+  justifyContent: { md: 'space-between', xs: 'start' },
 };
 
 export const PageLinksSx: SxProps = {
@@ -26,7 +26,8 @@ export const LinksSx: SxProps = {
 
 export const TextLinksSx: SxProps = {
   color: 'text.primary',
-  lineHeight: '160px',
+  fontSize: { md: '130px', xs: '50px' },
+  lineHeight: { md: '160px', xs: '60px' },
   fontWeight: 400,
 };
 
@@ -39,7 +40,7 @@ export const SocialLinksSx: SxProps = {
 
 export const FeaturedProjectBoxSx: SxProps = {
   display: 'flex',
-  flexDirection: 'row',
+  flexDirection: { md: 'row', xs: 'column' },
 };
 
 export const FeaturedProjectSectionSx: SxProps = {
