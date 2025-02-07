@@ -17,7 +17,7 @@ export const BoxSx: SxProps = {
 };
 
 export const PageLinksSx: SxProps = {
-  width: '50%',
+  width: { md: '50%', xs: '100%' },
 };
 
 export const LinksSx: SxProps = {
@@ -45,15 +45,16 @@ export const FeaturedProjectBoxSx: SxProps = {
 
 export const FeaturedProjectSectionSx: SxProps = {
   width: '192px',
-  height: '291px',
+  height: { md: '291px', xs: '140px' },
   display: 'flex',
-  flexDirection: 'column',
-  justifyContent: 'space-around',
+  flexDirection: { md: 'column', xs: 'row' },
+  justifyContent: { md: 'space-around', xs: 'start' },
+  alignItems: { md: 'unset', xs: 'center' },
 };
 
 export const FeaturedProjectTextSx: SxProps = {
-  fontSize: '36px',
-  lineHeight: '40px',
+  fontSize: { md: '36px', xs: '24px' },
+  lineHeight: { md: '40px', xs: '30px' },
   color: '#1300A2',
   textDecoration: 'underline',
   letterSpacing: '0.06em',
