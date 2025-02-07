@@ -1,13 +1,15 @@
-import { Box, Link, Stack, Typography } from '@mui/material';
+import { Box, Divider, Link, Stack, Typography } from '@mui/material';
 import useDropdown from '../../hooks/useDropdown';
 import { Pill } from '@/frontend/modules/pill/ui/Pill';
 import {
   BoxSx,
+  DividerSx,
   DropdownSx,
   FeaturedProjectBoxSx,
   FeaturedProjectSectionSx,
   FeaturedProjectTextSx,
   ImageCaptionSx,
+  ImageContainerSx,
   LinksSx,
   PageLinksSx,
   ProjectDescriptionSx,
@@ -75,23 +77,24 @@ export const Dropdown = () => {
             </Box>
           </Stack>
           <Box sx={ProjectImageAndLinksBoxSx}>
-            <Image
-              src='/alojinha.png'
-              alt='alojinha'
-              width={447}
-              height={338}
-              style={{ display: 'block' }}
-            />
+            <Box sx={ImageContainerSx}>
+              <Image
+                src='/alojinha.png'
+                alt='alojinha'
+                width={447}
+                height={338}
+                layout='responsive'
+              />
+            </Box>
             <ArrowLink />
             <Typography sx={ImageCaptionSx} variant='body2'>
               aLojinha
             </Typography>
-
             <Typography sx={ProjectDescriptionSx}>Branding & Style</Typography>
           </Box>
         </Box>
       </Box>
-      <hr />
+      <Divider orientation='horizontal' variant='middle' sx={DividerSx} />
       <Box sx={SocialLinksSx}>
         {menuItems.map((item, index) => (
           <Pill key={index} link={item.link} title={item.title} />

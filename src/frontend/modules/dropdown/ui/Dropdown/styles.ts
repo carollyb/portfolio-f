@@ -18,6 +18,7 @@ export const BoxSx: SxProps = {
 
 export const PageLinksSx: SxProps = {
   width: { md: '50%', xs: '100%' },
+  height: 'auto',
 };
 
 export const LinksSx: SxProps = {
@@ -31,20 +32,13 @@ export const TextLinksSx: SxProps = {
   fontWeight: 400,
 };
 
-export const SocialLinksSx: SxProps = {
-  display: 'flex',
-  flexDirection: 'row',
-  marginTop: '45px',
-  gap: '24px',
-};
-
 export const FeaturedProjectBoxSx: SxProps = {
   display: 'flex',
   flexDirection: { md: 'row', xs: 'column' },
 };
 
 export const FeaturedProjectSectionSx: SxProps = {
-  width: '192px',
+  width: { md: '192px', xs: '264px' },
   height: { md: '291px', xs: '140px' },
   display: 'flex',
   flexDirection: { md: 'column', xs: 'row' },
@@ -59,10 +53,12 @@ export const FeaturedProjectTextSx: SxProps = {
   textDecoration: 'underline',
   letterSpacing: '0.06em',
   fontWeight: 400,
+  width: { md: 'unset', xs: '115px' },
 };
 
 export const ViewProjectsBoxSx: SxProps = {
   width: '42px',
+  marginLeft: { md: 'unset', xs: '107px' },
 };
 
 export const ViewProjectsTextSx: SxProps = {
@@ -72,11 +68,17 @@ export const ViewProjectsTextSx: SxProps = {
 export const ProjectImageAndLinksBoxSx: SxProps = {
   position: 'relative',
   display: 'inline-block',
-  height: '338px',
+  height: { md: '338px', xs: '192px' },
+  marginLeft: { md: 'unset', xs: '80px' },
+};
+
+export const ImageContainerSx: SxProps = {
+  width: { md: '447px', xs: '254px' },
+  height: { md: '338px', xs: '192px' },
 };
 
 export const ImageCaptionSx: SxProps = {
-  fontSize: '23px',
+  fontSize: { md: '24px', xs: '14px' },
   fontWeight: 500,
   lineHeight: '30px',
   color: 'primary.contrastText',
@@ -84,8 +86,20 @@ export const ImageCaptionSx: SxProps = {
 };
 
 export const ProjectDescriptionSx: SxProps = {
-  fontSize: '22px',
+  fontSize: { md: '22px', xs: '12px' },
   fontWeight: 300,
   lineHeight: '30px',
-  marginTop: '10px',
+  marginTop: { md: '10px', xs: '6px' },
+};
+
+export const DividerSx: SxProps = {
+  display: { xs: 'none' },
+  border: '1px solid',
+};
+
+export const SocialLinksSx: SxProps = {
+  display: 'flex',
+  flexDirection: 'row',
+  marginTop: { md: '45px', xs: '100px' },
+  gap: '24px',
 };
