@@ -1,5 +1,5 @@
 import { Box, Typography } from '@mui/material';
-import { PillSx } from './styles';
+import { PillSx, TextSx } from './styles';
 import Link from 'next/link';
 
 type PillProps = {
@@ -12,10 +12,14 @@ export const Pill = ({ title, link }: PillProps) => {
     <Box sx={PillSx}>
       {link ? (
         <Link style={{ textDecoration: 'none' }} href={link} target='_blank'>
-          <Typography variant='caption'>{title}</Typography>
+          <Typography sx={TextSx} variant='caption'>
+            {title}
+          </Typography>
         </Link>
       ) : (
-        <Typography variant='caption'>{title}</Typography>
+        <Typography sx={TextSx} variant='caption'>
+          {title}
+        </Typography>
       )}
     </Box>
   );

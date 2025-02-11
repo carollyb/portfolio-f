@@ -3,7 +3,7 @@ import { SxProps } from '@mui/material';
 export const DropdownSx: SxProps = {
   display: 'flex',
   flexDirection: 'column',
-  justifyContent: 'end',
+  justifyContent: { sm: 'end', xs: 'start' },
   width: '100%',
   backgroundColor: 'background.paper',
   height: { md: '692px', xs: 'auto' },
@@ -100,6 +100,6 @@ export const DividerSx: SxProps = {
 export const SocialLinksSx: SxProps = {
   display: 'flex',
   flexDirection: 'row',
-  marginTop: { md: '45px', xs: '100px' },
-  gap: '24px',
+  marginTop: { md: '45px', xs: '90px' },
+  gap: { sm: '24px', xs: '8px' },
 };

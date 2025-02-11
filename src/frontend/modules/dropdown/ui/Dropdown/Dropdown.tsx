@@ -44,7 +44,6 @@ export const Dropdown = () => {
   return (
     <Stack
       sx={DropdownSx}
-      role='presentation'
       onClick={() => toggleDrawer(false)}
       onKeyDown={() => toggleDrawer(false)}
     >

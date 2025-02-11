@@ -5,9 +5,13 @@ export const PillSx: SxProps = {
   flexDirection: 'column',
   justifyContent: 'center',
   width: 'auto',
-  height: '40px',
+  height: { sm: '40px', xs: '28px' },
   border: '1px solid #707070',
-  borderRadius: '20px',
+  borderRadius: { sm: '20px', xs: '14px' },
   textAlign: 'center',
-  px: '20px',
+  px: { sm: '20px', xs: '10px' },
+};
+
+export const TextSx: SxProps = {
+  fontSize: { sm: '16px', xs: '10px' },
 };
