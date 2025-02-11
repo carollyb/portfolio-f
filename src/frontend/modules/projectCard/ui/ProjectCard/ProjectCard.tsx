@@ -12,8 +12,8 @@ export const ProjectCard = ({ cover, title, path }: ProjectCardProps) => {
     <Link href={path}>
       <Box
         sx={{
-          width: '300px',
-          height: '330px',
+          width: { sm: '300px', xs: 'auto' },
+          height: { sm: '250px', xs: 'auto' },
         }}
       >
         <Box sx={{ height: '230px' }}>

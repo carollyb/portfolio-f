@@ -1,6 +1,12 @@
 import { Box, Button, Tab, Tabs, Typography } from '@mui/material';
 import { useState } from 'react';
-import { ButtonsWrapperSx, ButtonSx, DividerSx, WrapperSx } from './styles';
+import {
+  ButtonsWrapperSx,
+  ButtonSx,
+  DividerSx,
+  TabsWrapperSx,
+  WrapperSx,
+} from './styles';
 
 function a11yProps(index: number) {
   return {
@@ -59,19 +65,9 @@ export const Footer = ({ setViewMode, setTag, viewMode }: FooterProps) => {
           </Typography>
         </Button>
       </Box>
-      <Box
-        sx={{
-          display: 'flex',
-          flexDirection: 'row',
-          gap: '20px',
-        }}
-      >
+      <Box sx={TabsWrapperSx}>
         <Box sx={DividerSx}>
-          <Tabs
-            value={value}
-            onChange={handleChange}
-            aria-label='basic tabs example'
-          >
+          <Tabs value={value} onChange={handleChange}>
             <Tab
               onClick={() => setTag('all')}
               label='View All'

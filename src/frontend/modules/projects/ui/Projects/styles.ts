@@ -10,12 +10,14 @@ export const ListStackSx: SxProps = {
 
 export const GridStackSx: SxProps = {
   display: 'flex',
+  flexGrow: 1,
   flexDirection: 'row',
   justifyContent: 'space-between',
   flexWrap: 'wrap',
   gap: '20px',
-  paddingX: '40px',
-  paddingY: '32px',
+  paddingX: { sm: '40px', xs: '32px' },
+  paddingTop: '32px',
+  paddingBottom: { sm: '112px', xs: '194px' },
   backgroundColor: 'background.paper',
   borderTop: '2px solid #1300A2',
   height: 'auto',

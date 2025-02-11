@@ -2,19 +2,27 @@ import { SxProps } from '@mui/material';
 
 export const WrapperSx: SxProps = {
   display: 'flex',
-  flexDirection: 'row',
+  flexDirection: { sm: 'row', xs: 'column' },
   justifyContent: 'space-between',
-  alignItems: 'center',
+  alignItems: { sm: 'center', xs: 'start' },
   position: 'fixed',
   bottom: '0px',
   width: '100%',
-  height: '80px',
+  height: { sm: '80px', xs: 'auto' },
   backgroundColor: 'background.paper',
-  paddingX: 10,
+  paddingX: { sm: 10, xs: '24px' },
+  paddingY: { sm: 'unset', xs: '24px' },
   borderTop: '2px solid #1300A2',
+  gap: { sm: 'unset', xs: '24px' },
 };
 
 export const ButtonsWrapperSx: SxProps = {
+  display: 'flex',
+  flexDirection: 'row',
+  gap: '20px',
+};
+
+export const TabsWrapperSx: SxProps = {
   display: 'flex',
   flexDirection: 'row',
   gap: '20px',
