@@ -6,13 +6,13 @@ export const BoxSx: SxProps = {
   justifyContent: 'end',
   alignItems: 'end',
   backgroundColor: 'background.paper',
-  gap: '20px',
+  gap: { sm: '20px', xs: '9px' },
 };
 
 export const TextSx: SxProps = {
   color: 'text.primary',
-  fontSize: '12px',
-  width: '56px',
-  lineHeight: '13px',
+  fontSize: { sm: '12px', xs: '8px' },
+  width: { sm: '56px', xs: '49px' },
+  lineHeight: { sm: '13px', xs: '10px' },
   textAlign: 'end',
 };

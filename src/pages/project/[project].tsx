@@ -50,15 +50,15 @@ export default function ProjectPage({
             justifyContent: 'space-between',
             alignItems: 'center',
             width: '100%',
-            paddingX: '45px',
+            paddingX: { sm: '45px', xs: '20px' },
           }}
         >
           <Typography
             variant='h2'
             sx={{
               color: 'primary.main',
-              marginTop: '34px',
-              justifySelf: 'start',
+              fontSize: { sm: '48px', xs: '20px' },
+              marginBottom: '50px',
             }}
           >
             {project.year}
@@ -71,6 +71,7 @@ export default function ProjectPage({
               height={460}
               quality={100}
               style={{ display: 'block' }}
+              layout='responsive'
             />
             <ArrowLink />
           </Box>
@@ -80,7 +81,12 @@ export default function ProjectPage({
         </Box>
         <Typography
           variant='h1'
-          sx={{ color: 'primary.main', marginTop: '34px' }}
+          sx={{
+            color: 'primary.main',
+            marginTop: { sm: '34px', xs: '10px' },
+            fontSize: { sm: '130px', xs: '25px' },
+            lineHeight: { sm: '130px', xs: '65px' },
+          }}
         >
           {project.title}
         </Typography>
@@ -93,8 +99,8 @@ export default function ProjectPage({
             width: '100%',
             borderTop: '1px solid #707070',
             borderBottom: '1px solid #707070',
-            py: '26px',
-            px: '45px',
+            py: { sm: '26px', xs: '12px' },
+            px: { sm: '45px', xs: '20px' },
           }}
         >
           {project.tags.map((tag, index) => (
@@ -104,14 +110,16 @@ export default function ProjectPage({
         <Typography
           variant='body1'
           sx={{
-            px: '45px',
+            px: { sm: '45px', xs: '20px' },
             color: 'primary.main',
-            marginTop: '34px',
+            marginTop: { sm: '34px', xs: '18px' },
+            fontSize: { sm: '40px', xs: '14px' },
+            lineHeight: { sm: '40px', xs: '20px' },
           }}
         >
           {project.description}
         </Typography>
-        <Box sx={{ marginTop: '80px' }}>
+        <Box sx={{ marginTop: { sm: '80px', xs: '24px' } }}>
           {project.projectImages.map((projectImage, index) => (
             <Box key={index}>
               <Image
