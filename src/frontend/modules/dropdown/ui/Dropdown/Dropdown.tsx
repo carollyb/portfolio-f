@@ -4,6 +4,7 @@ import { Pill } from '@/frontend/modules/pill/ui/Pill';
 import {
   BoxSx,
   DividerSx,
+  DropdownFooterMobileSx,
   DropdownSx,
   FeaturedProjectBoxSx,
   FeaturedProjectSectionSx,
@@ -99,6 +100,7 @@ export const Dropdown = () => {
           <Pill key={index} link={item.link} title={item.title} />
         ))}
       </Box>
+      <Box sx={DropdownFooterMobileSx}></Box>
     </Stack>
   );
 };

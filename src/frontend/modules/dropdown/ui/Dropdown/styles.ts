@@ -7,7 +7,7 @@ export const DropdownSx: SxProps = {
   width: '100%',
   backgroundColor: 'background.paper',
   height: { md: '692px', xs: 'auto' },
-  padding: { md: '115px 40px 40px 30px', xs: '16px 20px 24px 20px' },
+  padding: { md: '115px 40px 40px 30px', xs: '16px 20px 86px 20px' },
 };
 
 export const BoxSx: SxProps = {
@@ -102,4 +102,12 @@ export const SocialLinksSx: SxProps = {
   flexDirection: 'row',
   marginTop: { md: '45px', xs: '90px' },
   gap: { sm: '24px', xs: '8px' },
+  marginBottom: { sm: '0px', xs: '76px' },
+};
+
+export const DropdownFooterMobileSx: SxProps = {
+  display: { sm: 'none', xs: 'flex' },
+  borderTop: '1px solid #120096',
+  height: '72px',
+  marginX: '-20px',
 };
