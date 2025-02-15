@@ -22,7 +22,7 @@ import {
 } from './styles';
 import Image from 'next/image';
 import { ArrowLink } from '@/frontend/modules/arrowlink/ui/Arrowlink';
-import { menuItems } from '@/pages/about';
+import { menuItems } from '@/frontend/utils/menuitems';
 
 const pageItems = [
   {

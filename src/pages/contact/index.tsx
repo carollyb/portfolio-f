@@ -1,7 +1,7 @@
 import { Header } from '@/frontend/modules/header/ui/Header';
 import { Pill } from '@/frontend/modules/pill/ui/Pill';
+import { menuItems } from '@/frontend/utils/menuitems';
 import { Box, Divider, Stack, Typography } from '@mui/material';
-import { menuItems } from '../about';
 
 export default function Contact() {
   return (
