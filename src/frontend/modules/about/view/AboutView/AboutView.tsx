@@ -12,21 +12,7 @@ import {
   FooterSx,
 } from './styles';
 import Image from 'next/image';
-
-const menuItems = [
-  {
-    link: 'https://www.instagram.com/fernandaf.e/',
-    title: 'Instagram',
-  },
-  {
-    link: 'https://www.linkedin.com/in/fernanda-eziquiel/',
-    title: 'Linkedin',
-  },
-  {
-    link: 'https://www.behance.net/fernandaeziquiel',
-    title: 'Behance',
-  },
-];
+import { menuItems } from '@/frontend/utils/menuitems';
 
 export default function AboutView() {
   return (
