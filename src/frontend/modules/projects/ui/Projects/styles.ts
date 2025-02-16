@@ -1,8 +1,9 @@
 import { SxProps } from '@mui/material';
 
 export const ListStackSx: SxProps = {
-  paddingX: '40px',
+  paddingX: { sm: '40px', xs: '20px' },
   paddingY: '32px',
+  marginBottom: { xs: '32px' },
   backgroundColor: 'background.paper',
   height: '964px',
   borderTop: '1px solid #707070',
@@ -21,4 +22,10 @@ export const GridStackSx: SxProps = {
   backgroundColor: 'background.paper',
   borderTop: '2px solid #1300A2',
   height: 'auto',
+};
+
+export const TitleTextSx: SxProps = {
+  color: 'primary.main',
+  fontSize: { sm: '25px', xs: '8px' },
+  lineHeight: { sm: '40px', xs: '20px' },
 };
