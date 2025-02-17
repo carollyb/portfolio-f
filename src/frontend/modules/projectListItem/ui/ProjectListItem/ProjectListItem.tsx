@@ -1,6 +1,6 @@
 import { Pill } from '@/frontend/modules/pill/ui/Pill';
 import { Project } from '@/frontend/modules/projects/types/project.type';
-import { Box, Typography } from '@mui/material';
+import { Box, Link, Typography } from '@mui/material';
 import { ProjectTextSx } from './styles';
 
 type ProjectListItemProps = {
@@ -26,9 +26,15 @@ export const ProjectListItem = ({ project }: ProjectListItemProps) => {
           width: { sm: '33%', xs: '50%' },
         }}
       >
-        <Typography variant='body2' sx={ProjectTextSx}>
-          {project.title}
-        </Typography>
+        <Link
+          href={`/project/${project.slug}`}
+          target='_blank'
+          style={{ textDecoration: 'none' }}
+        >
+          <Typography variant='body2' sx={ProjectTextSx}>
+            {project.title}
+          </Typography>
+        </Link>
       </Box>
       <Box
         sx={{
