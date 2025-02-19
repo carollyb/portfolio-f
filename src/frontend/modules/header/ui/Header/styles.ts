@@ -21,9 +21,13 @@ export const HeaderMobileSx: SxProps = {
   flexDirection: 'row',
   alignItems: 'center',
   height: '48px',
-  width: '100%',
+  width: '90%',
   backgroundColor: 'primary.contrastText',
   borderRadius: '10px',
+  position: 'fixed',
+  top: '36px',
+  right: '20px',
+  left: '20px',
 };
 
 export const TextSx: SxProps = {
@@ -66,7 +70,8 @@ export const MenuButtonDesktopSx: SxProps = {
 
 export const DrawerSx: SxProps = {
   '& .MuiPaper-root': {
-    marginTop: '80px',
+    marginTop: { sm: '80px', xs: '0px' },
+    paddingTop: { sm: '0px', xs: '80px' },
     borderBottomRightRadius: '20px',
     borderBottomLeftRadius: '20px',
   },
