@@ -81,4 +81,38 @@ export const theme = createTheme({
       color: '#707070',
     },
   },
+  colorSchemes: {
+    light: {
+      palette: {
+        primary: {
+          contrastText: '#1300A2',
+          main: '#120096',
+          light: '#1E00FF',
+        },
+        background: {
+          default: '#FF99F1',
+          paper: '#FFE8FC',
+        },
+        text: {
+          primary: '#707070',
+        },
+      },
+    },
+    dark: {
+      palette: {
+        primary: {
+          contrastText: '#FFE8FC',
+          main: '#FFE8FC',
+          light: '#FFE8FC',
+        },
+        background: {
+          default: '#1300A2',
+          paper: '#1D1D1D',
+        },
+        text: {
+          primary: '#707070',
+        },
+      },
+    },
+  },
 });

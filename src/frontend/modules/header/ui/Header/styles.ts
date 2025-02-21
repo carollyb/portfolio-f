@@ -13,7 +13,8 @@ export const HeaderSx: SxProps = {
   top: 0,
   left: 0,
   right: 0,
-  borderBottom: { md: '2px solid #1300A2' },
+  borderBottom: { md: '2px solid' },
+  borderBottomColor: { md: 'primary.contrastText' },
 };
 
 export const HeaderMobileSx: SxProps = {

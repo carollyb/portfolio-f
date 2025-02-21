@@ -1,5 +1,12 @@
-import { Box, Button, Divider, Drawer, Typography } from '@mui/material';
-import { useTheme } from '@mui/material/styles';
+import {
+  Box,
+  Button,
+  Divider,
+  Drawer,
+  Switch,
+  Typography,
+} from '@mui/material';
+import { useColorScheme, useTheme } from '@mui/material/styles';
 import useDropdown from '@/frontend/modules/dropdown/hooks/useDropdown';
 import {
   DividerMobileSx,
@@ -34,6 +41,14 @@ export const Header = () => {
     };
   }, [open]);
 
+  const { mode, setMode } = useColorScheme();
+  if (!mode) {
+    return null;
+  }
+  const handleChange = () => {
+    setMode(mode === 'light' ? 'dark' : 'light');
+  };
+
   return (
     <Box
       sx={{
@@ -58,6 +73,23 @@ export const Header = () => {
         MENU
       </Button>
       <Box sx={DotSx} />
+      <Box
+        sx={{
+          display: { sm: 'flex', xs: 'none' },
+          flexDirection: 'row',
+          alignItems: 'center',
+        }}
+      >
+        <Switch onChange={handleChange} />
+        <Typography
+          variant='subtitle2'
+          sx={{
+            color: 'primary.contrastText',
+          }}
+        >
+          DARK MODE
+        </Typography>
+      </Box>
       <Drawer
         sx={DrawerSx}
         anchor='top'

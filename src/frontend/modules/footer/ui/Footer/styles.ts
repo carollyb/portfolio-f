@@ -12,7 +12,8 @@ export const WrapperSx: SxProps = {
   backgroundColor: 'background.paper',
   paddingX: { sm: 10, xs: '24px' },
   paddingY: { sm: 'unset', xs: '24px' },
-  borderTop: '2px solid #1300A2',
+  borderTop: '2px solid',
+  borderTopColor: 'primary.contrastText',
   gap: { sm: 'unset', xs: '24px' },
 };
 

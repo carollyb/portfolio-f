@@ -19,7 +19,8 @@ export const GridStackSx: SxProps = {
   paddingTop: '32px',
   paddingBottom: { sm: '112px', xs: '24px' },
   backgroundColor: 'background.paper',
-  borderTop: '2px solid #1300A2',
+  borderTop: '2px solid',
+  borderTopColor: 'primary.contrastText',
   height: 'auto',
   minHeight: { sm: 'unset', xs: '488px' },
 };
