@@ -9,6 +9,7 @@ import {
 import { useColorScheme, useTheme } from '@mui/material/styles';
 import useDropdown from '@/frontend/modules/dropdown/hooks/useDropdown';
 import {
+  DarkModeBoxSx,
   DividerMobileSx,
   DotMobileSx,
   DotSx,
@@ -73,14 +74,7 @@ export const Header = () => {
         MENU
       </Button>
       <Box sx={DotSx} />
-      <Box
-        sx={{
-          display: { sm: 'flex', xs: 'none' },
-          flexDirection: 'row',
-          alignItems: 'center',
-        }}
-      >
-        <Switch onChange={handleChange} />
+      <Box sx={DarkModeBoxSx}>
         <Typography
           variant='subtitle2'
           sx={{
@@ -89,6 +83,7 @@ export const Header = () => {
         >
           DARK MODE
         </Typography>
+        <Switch defaultChecked={mode === 'dark'} onChange={handleChange} />
       </Box>
       <Drawer
         sx={DrawerSx}

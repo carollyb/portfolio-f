@@ -3,6 +3,7 @@ import { SxProps } from '@mui/material';
 export const HeaderSx: SxProps = {
   display: 'flex',
   flexDirection: 'row',
+  justifyContent: 'start',
   alignItems: 'center',
   height: '80px',
   backgroundColor: 'background.paper',
@@ -42,6 +43,14 @@ export const DotSx: SxProps = {
   height: '15px',
   backgroundColor: 'background.default',
   borderRadius: '7.5px',
+};
+
+export const DarkModeBoxSx: SxProps = {
+  display: { md: 'flex', xs: 'none' },
+  flexDirection: 'row',
+  alignItems: 'center',
+  marginLeft: 'auto',
+  justifySelf: 'end',
 };
 
 export const DotMobileSx: SxProps = {
