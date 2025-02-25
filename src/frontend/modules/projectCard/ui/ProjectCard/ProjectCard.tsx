@@ -1,4 +1,5 @@
 import { Box, Typography } from '@mui/material';
+import Image from 'next/image';
 import Link from 'next/link';
 
 type ProjectCardProps = {
@@ -16,14 +17,24 @@ export const ProjectCard = ({ cover, title, path }: ProjectCardProps) => {
           height: { sm: '250px', xs: 'auto' },
         }}
       >
-        <Box sx={{ height: '230px' }}>
-          <img
+        <Box
+          sx={{
+            height: '192px',
+            overflow: 'hidden',
+          }}
+        >
+          <Image
             src={cover}
-            alt='cover'
-            style={{ maxHeight: '100%', width: 'auto', maxWidth: '300px' }}
+            alt='Project cover'
+            height={192}
+            width={302}
+            style={{ objectFit: 'contain', width: 'auto' }}
           />
         </Box>
-        <Typography variant='subtitle2' sx={{ color: 'text.primary' }}>
+        <Typography
+          variant='subtitle2'
+          sx={{ color: 'text.primary', marginTop: '18px' }}
+        >
           {title}
         </Typography>
       </Box>
