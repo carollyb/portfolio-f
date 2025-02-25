@@ -1,4 +1,4 @@
-import { Box, Button, Tab, Tabs, Typography } from '@mui/material';
+import { Box, Button, styled, Tab, Tabs, Typography } from '@mui/material';
 import { useState } from 'react';
 import {
   ButtonsWrapperSx,
@@ -21,12 +21,52 @@ interface FooterProps {
   setTag: (tag: string) => void;
 }
 
+const AntTabs = styled(Tabs)({
+  borderBottom: '1px solid #e8e8e8',
+  '& .MuiTabs-indicator': {
+    backgroundColor: 'primary.contrastText',
+  },
+});
+
+interface StyledTabProps {
+  label: string;
+  onClick: () => void;
+}
+
+const AntTab = styled((props: StyledTabProps) => (
+  <Tab disableRipple {...props} />
+))(({ theme }) => ({
+  textTransform: 'none',
+  minWidth: 0,
+  [theme.breakpoints.up('sm')]: {
+    minWidth: 0,
+    fontSize: '14px',
+  },
+  fontSize: '10px',
+  fontWeight: theme.typography.fontWeightRegular,
+  marginRight: theme.spacing(1),
+  color: 'text.primary',
+  fontFamily: ['__Inter_81dec9', '__Inter_Fallback_81dec9'],
+  '&:hover': {
+    color: 'primary.contrastText',
+    opacity: 1,
+  },
+  '&.Mui-selected': {
+    color: 'primary.contrastText',
+    fontWeight: theme.typography.fontWeightMedium,
+  },
+  '&.Mui-focusVisible': {
+    backgroundColor: '#d1eaff',
+  },
+}));
+
 export const Footer = ({ setViewMode, setTag, viewMode }: FooterProps) => {
   const [value, setValue] = useState(0);
 
   const handleChange = (event: React.SyntheticEvent, newValue: number) => {
     setValue(newValue);
   };
+
   return (
     <Box sx={WrapperSx}>
       <Box sx={ButtonsWrapperSx}>
@@ -67,28 +107,32 @@ export const Footer = ({ setViewMode, setTag, viewMode }: FooterProps) => {
       </Box>
       <Box sx={TabsWrapperSx}>
         <Box sx={DividerSx}>
-          <Tabs value={value} onChange={handleChange}>
-            <Tab
+          <AntTabs
+            value={value}
+            onChange={handleChange}
+            aria-label='ant example'
+          >
+            <AntTab
               onClick={() => setTag('all')}
               label='View All'
               {...a11yProps(0)}
             />
-            <Tab
+            <AntTab
               onClick={() => setTag('ux')}
               label='UX/UI Design'
               {...a11yProps(1)}
             />
-            <Tab
+            <AntTab
               onClick={() => setTag('art')}
               label='Art Direction'
               {...a11yProps(2)}
             />
-            <Tab
+            <AntTab
               onClick={() => setTag('illustration')}
               label='Illustrations'
               {...a11yProps(2)}
             />
-          </Tabs>
+          </AntTabs>
         </Box>
       </Box>
     </Box>

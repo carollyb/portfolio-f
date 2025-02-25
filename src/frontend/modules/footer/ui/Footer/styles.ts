@@ -10,7 +10,7 @@ export const WrapperSx: SxProps = {
   width: '100%',
   height: { sm: '80px', xs: 'auto' },
   backgroundColor: 'background.paper',
-  paddingX: { sm: 10, xs: '24px' },
+  paddingX: { sm: 10, xs: '20px' },
   paddingY: { sm: 'unset', xs: '24px' },
   borderTop: '2px solid',
   borderTopColor: 'primary.contrastText',
